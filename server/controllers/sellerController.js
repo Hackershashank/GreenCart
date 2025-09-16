@@ -61,7 +61,7 @@ export const sellerLogout = async(req,res)=>{
         });
         return res.json({
             success:true,
-            message:"Seller Logged Out"
+            message:"Logged Out"
         })
     } catch (error) {
         console.log(error.message);
