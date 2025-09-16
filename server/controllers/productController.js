@@ -7,7 +7,7 @@ export const addProduct=async(req,res)=>{
 
         let productData=JSON.parse(req.body.productData);
 
-        const images=req.files || [];
+        const images=req.files;
 
         let imagesUrl=await Promise.all(
             images.map(async(item)=>{
