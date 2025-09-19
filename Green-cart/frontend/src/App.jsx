@@ -19,6 +19,7 @@ import AddProduct from "./pages/Seller/AddProduct";
 import ProductList from "./pages/Seller/ProductList";
 import Orders from "./pages/Seller/Orders";
 import axios from "axios";
+import Loading from "./components/uilayouts/Loading";
 
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/cart" element={<Cart/>} />
           <Route path="/add-address" element={<AddAddress/>} />
           <Route path="/my-orders" element={<MyOrders/>} />
+          <Route path="/loader" element={<Loading/>} />
       
 
           <Route path="/seller" element={isSeller ? <SellerDashboardWithNavbar/> : <SellerLogin/>}>

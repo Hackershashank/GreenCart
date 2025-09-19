@@ -18,6 +18,7 @@ import addressRouter from "./routes/addressRoutes.js";
 import orderRouter from "./routes/orderRoute.js";
 
 import connectClodinary from "./configs/cloudinary.js";
+import { stripeWebHooks } from "./controllers/orderController.js";
 
 //2.
 //created a server using express() function
@@ -30,7 +31,8 @@ await connectClodinary();
 
 //5.
 //Allow multiple origins
-const allowedOrigin = ["https://green-cart-grocery-app-gham.vercel.app","http://localhost:5173"];
+const allowedOrigin = ["http://localhost:5173"];
+app.post('/stripe',express.raw({type: `application/json`}),stripeWebHooks);
 
 //4.
 //Middleware configuration

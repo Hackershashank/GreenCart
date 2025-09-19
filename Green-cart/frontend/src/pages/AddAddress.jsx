@@ -65,7 +65,7 @@ const AddAddress = () => {
     if(!user){
       navigate('/cart');
     }
-  })
+  },[])
 
   return (
     <div className="mt-16 pb-16">

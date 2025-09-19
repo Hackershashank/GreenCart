@@ -5,7 +5,7 @@ import fs from 'fs'
 
 import Product from "./models/product.js";
 
-const uri = `mongodb+srv://sammysk12:sammysk123@cluster0.fdotfdo.mongodb.net/greencart`;
+const uri = `mongodb+srv://shashanksingh14370_db_user:lzpfeUsyBiWqysp0@cluster0.5dr2lyu.mongodb.net`;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
