@@ -31,7 +31,7 @@ await connectClodinary();
 
 //5.
 //Allow multiple origins
-const allowedOrigin = ["http://localhost:5173"];
+const allowedOrigin = ["http://localhost:5173","https://green-cart-frontend-pi.vercel.app"];
 app.post('/stripe',express.raw({type: `application/json`}),stripeWebHooks);
 
 //4.

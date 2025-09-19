@@ -1,8 +1,5 @@
 import mongoose from "mongoose";
 import fs from 'fs'
-
-
-
 import Product from "./models/product.js";
 
 const uri = `mongodb+srv://shashanksingh14370_db_user:lzpfeUsyBiWqysp0@cluster0.5dr2lyu.mongodb.net`;
